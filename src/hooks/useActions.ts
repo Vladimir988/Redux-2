@@ -1,8 +1,8 @@
 import {useAppDispatch} from "./useTypedSelector";
 import {bindActionCreators} from "redux";
-import * as UserActionCreators from "../store/action-creators/user";
+import ActionCreators from "../store/action-creators/";
 
 export const useActions = () => {
     const dispatch = useAppDispatch();
-    return bindActionCreators(UserActionCreators, dispatch);
+    return bindActionCreators(ActionCreators, dispatch);
 }
